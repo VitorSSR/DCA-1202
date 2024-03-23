@@ -1,0 +1,48 @@
+Aluno:
+
+
+NOTA FINAL: 8,8
+
+
+DESCONTOS: -1,2pt
+
+### -0,2pt Na função MainLoja:: exibir_lista_CDS, na inclusão dos QLabel para exibição do número de faixas, em vez de:
+  label_numero_faixas->setAlignment(Qt::AlignLeft | Qt::AlignVCenter);
+deveria ser:
+  label_numero_faixas->setAlignment(Qt::AlignHCenter | Qt::AlignVCenter);
+ou:
+  label_numero_faixas->setAlignment(Qt::AlignCenter);
+para que o número de faixas ficasse centralizado, como determina a especificação.
+Mesmo erro na função exibir_lista_DVDS com relação à exibição da duração.
+
+### -0,5pt Na função MainLoja::slotIncluirLivro, em vez de:
+  int preco_centavos = round(preco.toFloat()*100);
+  ...
+    Livro novo_livro(nomeString,preco_centavos,autorString);
+deveria ser:
+  float preco_reais = preco.toFloat();
+  ...
+    Livro novo_livro(nomeString,preco_reais,autorString);
+pois não existe na especificação, nem da interface nem da classe Loja, essa multiplicação do preço por 100. Com isso, o preço dos itens incluídos fica incorreto.
+Mesmo erro nas funções slotIncluirCD e slotIncluirDVD.
+
+### -0,5pt Você alterou algumas características da classe QDialog na classe que representa a janela de inclusão de livros (IncluirLivro), provavelmente na criação ou no QtDesigner. Com isso, a janela de diálogo não está se fechando quando vc pressiona o botão OK ou o botão Cancel. Como essa característica por default foi alterada, você precisa acrescentar no final da função IncluirLivro::on_botoes_livro_accepted:
+  close();
+e acrescentar um slot IncluirLivro::on_botoes_livro_rejected, contendo apenas:
+  close();
+Mesmo erro nas classes IncluirCD e IncluirDVD
+
+SUGESTÕES
+
+### No construtor da classe MainLoja, em vez da versão desatualizada da função connect:
+  connect(inclLivro,SIGNAL(signIncluirLivro(QString,QString,QString)),
+          this,SLOT(slotIncluirLivro(QString,QString,QString)));
+  connect(inclCD,SIGNAL(signIncluirCD(QString,QString,QString)),
+          this,SLOT(slotIncluirCD(QString,QString,QString)));
+  connect(inclDVD,SIGNAL(signIncluirDVD(QString,QString,QString)),
+          this,SLOT(slotIncluirDVD(QString,QString,QString)));
+seria melhor usar a versão atualizada da função:
+  connect(inclLivro, &IncluirLivro::signIncluirLivro, this, &MainLoja::slotIncluirLivro);
+  connect(inclCD, &IncluirCD::signIncluirCD, this, &MainLoja::slotIncluirCD);
+  connect(inclDVD, &IncluirDVD::signIncluirDVD, this, &MainLoja::slotIncluirDVD);
+

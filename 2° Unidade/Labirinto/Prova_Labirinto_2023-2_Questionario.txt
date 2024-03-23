@@ -1,0 +1,86 @@
+PROVA - PROGRAMAÇÃO AVANÇADA - 2023.2
+Projeto Labirinto
+
+
+Alun@: ___________________________________________________
+
+
+A avaliação consiste de 10 (dez) labirintos cujos mapas encontram-se no arquivo com as questões da prova. Para cada questão devem ser informados os seguintes resultados:
+
+== DADOS A SEREM SEMPRE INFORMADOS:
+* Tempo de execução (em milissegundos)
+* Número de nós em aberto (número inteiro)
+* Número de nós em fechado (número inteiro)
+== DADOS CUJO VALOR É -1 SE NÃO FOR ENCONTRADO CAMINHO
+* Comprimento do caminho (número real, 4 casas decimais)
+* Profundidade do caminho (número inteiro)
+
+QUESTÃO 01
+Tempo: 
+Nós Aberto: 
+Nós Fechado: 
+Comprimento: 
+Profundidade: 
+
+QUESTÃO 02
+Tempo: 
+Nós Aberto: 
+Nós Fechado: 
+Comprimento: 
+Profundidade: 
+
+QUESTÃO 03
+Tempo: 
+Nós Aberto: 
+Nós Fechado: 
+Comprimento: 
+Profundidade: 
+
+QUESTÃO 04
+Tempo: 
+Nós Aberto: 
+Nós Fechado: 
+Comprimento: 
+Profundidade: 
+
+QUESTÃO 05
+Tempo: 
+Nós Aberto: 
+Nós Fechado: 
+Comprimento: 
+Profundidade: 
+
+QUESTÃO 06
+Tempo: 
+Nós Aberto: 
+Nós Fechado: 
+Comprimento: 
+Profundidade: 
+
+QUESTÃO 07
+Tempo: 
+Nós Aberto: 
+Nós Fechado: 
+Comprimento: 
+Profundidade: 
+
+QUESTÃO 08
+Tempo: 
+Nós Aberto: 
+Nós Fechado: 
+Comprimento: 
+Profundidade: 
+
+QUESTÃO 09
+Tempo: 
+Nós Aberto: 
+Nós Fechado: 
+Comprimento: 
+Profundidade: 
+
+QUESTÃO 10
+Tempo: 
+Nós Aberto: 
+Nós Fechado: 
+Comprimento: 
+Profundidade: 

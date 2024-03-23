@@ -1,0 +1,10 @@
+CIRCUITO: 2 1 3
+PORTAS:
+1) OR 2: -1 -2
+2) NT 1: -2
+3) AN 2: 1 2
+SAIDAS:
+1) 3
+
+
+# Palavras chave "CIRCUITO", "PORTAS" e "SAIDAS" incorretas (com : adicional)

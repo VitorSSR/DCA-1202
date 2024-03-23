@@ -1,0 +1,7 @@
+O arquivo circuito_wrong00 está incorreto pq a última linha:
+SAIDAS
+1) 2
+2) 5 <<<<-----
+não termina com um ENTER nem com um espaço em branco. Por isso, a leitura da id da saída 2, cujo valor é 5, deve gerar um erro de EOF (End-Of-File), o que deve fazer com que o teste que necessariamente deve ser incluído no programa após cada leitura da stream:
+  if (!arq.good()) ... // ERRO
+ative uma condição de erro se a rotina de leitura tiver sido bem programada.

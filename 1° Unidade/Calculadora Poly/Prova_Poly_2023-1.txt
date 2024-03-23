@@ -1,0 +1,403 @@
+Projeto Poly - Prova 2023.1
+
+===================================================================
+ATENÇÃO: você NÃO DEVE responder a prova neste arquivo! As respostas (acertou ou não) devem ser escritas no arquivo do questionário que está disponível para download no SIGAA. É o questionário respondido (e não este arquivo modificado) que deve ser enviado na tarefa que corresponde à avaliação da execução no SIGAA.
+===================================================================
+
+A avaliação consiste das 37 (trinta e sete) questões que seguem. Cada questão é uma operação que deve ser executada pela calculadora de polinômios, usando sua classe Poly. Para cada uma das questões abaixo, é mostrado o resultado esperado (correto), com o valor a ser exibido para os polinômios P1, P2 e Result após a execução da operação. A nota inicial na avaliação será a soma das notas em todas as 37 questões.
+
+===================================================================
+ATENÇÃO: Caso uma questão gere resultado incorreto, para impedir que o resultado errado em uma questão contamine os resultados das questões seguintes, é permitido que você entre os valores esperados (corretos) dos polinômios (P1, P2 e Result), seja por teclado, seja alterando os arquivos e reiniciando a calculadora, antes de efetuar a questão seguinte. ATENÇÃO: a redigitação (teclado ou arquivo) dos polinômios só é permitida após uma questão errada.
+===================================================================
+
+
+===================
+QUESTÕES
+===================
+
+01) Inicie a calculadora de polinômios sem memória de execução anterior (se for o caso, apague os arquivos que armazenam os polinômios de eventual execução anterior).
+
+RESULTADO ESPERADO:
+========================
+P1:     [Vazio]
+P2:     0 [Nulo]
+Result: x [Grau 1]
+========================
+
+### TESTE DAS OPERAÇÕES: [ALGUMA COISA] operador [VAZIO] ###
+
+02) Troque os polinômios
+RESULTADO ESPERADO:
+========================
+P1:     x [Grau 1]
+P2:     [Vazio]
+Result: 0 [Nulo]
+========================
+
+03) Troque os polinômios
+RESULTADO ESPERADO:
+========================
+P1:     0 [Nulo]
+P2:     x [Grau 1]
+Result: [Vazio]
+========================
+
+04) Some os polinômios
+RESULTADO ESPERADO:
+========================
+P1:     x [Grau 1]
+P2:     [Vazio]
+Result: x [Grau 1]
+========================
+
+05) Troque os polinômios
+RESULTADO ESPERADO:
+========================
+P1:     x [Grau 1]
+P2:     x [Grau 1]
+Result: [Vazio]
+========================
+
+06) Multiplique os polinômios
+RESULTADO ESPERADO:
+========================
+P1:     x [Grau 1]
+P2:     [Vazio]
+Result: [Vazio]
+========================
+
+### TESTE DAS OPERAÇÕES: [VAZIO] operador [ALGUMA COISA] ###
+
+07) Entre um novo polinônimo (grau 0):
+P(x) = 0
+
+RESULTADO ESPERADO:
+========================
+P1:     [Vazio]
+P2:     [Vazio]
+Result: 0 [Nulo]
+========================
+
+08) Multiplique os polinômios
+RESULTADO ESPERADO:
+========================
+P1:     [Vazio]
+P2:     0 [Nulo]
+Result: [Vazio]
+========================
+
+09) Entre um novo polinônimo (grau 0):
+P(x) = 0
+
+RESULTADO ESPERADO:
+========================
+P1:     0 [Nulo]
+P2:     [Vazio]
+Result: 0 [Nulo]
+========================
+
+10) Subtraia os polinômios
+RESULTADO ESPERADO:
+========================
+P1:     [Vazio]
+P2:     0 [Nulo]
+Result: 0 [Nulo] ou -0 [Nulo]
+========================
+
+### TESTE DAS OPERAÇÕES COM POLINÔMIOS DE GRAU > 0 ###
+
+11) Entre um novo polinônimo (grau 1):
+P(x) = -x - 1.5
+
+RESULTADO ESPERADO:
+========================
+P1:     0 [Nulo]
+P2:     0 [Nulo] ou -0 [Nulo]
+Result: -x-1.5 [Grau 1]
+========================
+
+12) Some os dois polinômios:
+
+RESULTADO ESPERADO:
+========================
+P1:     0 [Nulo] ou -0 [Nulo]
+P2:     -x-1.5 [Grau 1]
+Result: -x-1.5 [Grau 1]
+========================
+
+13) Entre um novo polinônimo (grau 0):
+P(x) = 1
+
+RESULTADO ESPERADO:
+========================
+P1:     -x-1.5 [Grau 1]
+P2:     -x-1.5 [Grau 1]
+Result: 1 [Grau 0]
+========================
+
+14) Subtraia os dois polinômios:
+
+RESULTADO ESPERADO:
+========================
+P1:     -x-1.5 [Grau 1]
+P2:     1 [Grau 0]
+Result: -x-2.5 [Grau 1]
+========================
+
+15) Entre um novo polinômio (grau 2):
+P(x) = 2x2 + 0.5x
+
+RESULTADO ESPERADO:
+========================
+P1:     1 [Grau 0]
+P2:     -x-2.5 [Grau 1]
+Result: 2*x^2+0.5*x [Grau 2]
+========================
+
+16) Entre um novo polinômio (grau 3):
+P(x) = 0.5x3 - x
+
+RESULTADO ESPERADO:
+========================
+P1:     -x-2.5 [Grau 1]
+P2:     2*x^2+0.5*x [Grau 2]
+Result: 0.5*x^3-x [Grau 3]
+========================
+
+17) Multiplique os dois polinômios:
+
+RESULTADO ESPERADO:
+========================
+P1:     2*x^2+0.5*x [Grau 2]
+P2:     0.5*x^3-x [Grau 3]
+Result: x^5+0.25*x^4-2*x^3-0.5*x^2 [Grau 5]
+========================
+
+### TESTE DA REDUÇÃO DE GRAU ###
+
+18) Entre um novo polinômio (grau 5):
+P(x) = x5 + 0.25x4 - 2x3 - 1.5x2 - 4x
+
+RESULTADO ESPERADO:
+========================
+P1:     0.5*x^3-x [Grau 3]
+P2:     x^5+0.25*x^4-2*x^3-0.5*x^2 [Grau 5]
+Result: x^5+0.25*x^4-2*x^3-1.5*x^2-4*x [Grau 5]
+========================
+
+19) Subtraia os dois polinômios:
+
+RESULTADO ESPERADO:
+========================
+P1:     x^5+0.25*x^4-2*x^3-0.5*x^2 [Grau 5]
+P2:     x^5+0.25*x^4-2*x^3-1.5*x^2-4*x [Grau 5]
+Result: x^2+4*x [Grau 2]
+========================
+
+20) Entre um novo polinômio (grau 2):
+P(x) = -x2 - 4x
+
+RESULTADO ESPERADO:
+========================
+P1:     x^5+0.25*x^4-2*x^3-1.5*x^2-4*x [Grau 5]
+P2:     x^2+4*x [Grau 2]
+Result: -x^2-4*x [Grau 2]
+========================
+
+21) Some os dois polinômios:
+
+RESULTADO ESPERADO:
+========================
+P1:     x^2+4*x [Grau 2]
+P2:     -x^2-4*x [Grau 2]
+Result: 0 [Nulo]
+========================
+
+### TESTE DO SALVAMENTO DE ARQUIVO ###
+
+22) Termine (encerre) a execução da calculadora e verifique o conteúdo dos arquivos "poly_P1.txt", "poly_P2.txt" e "poly_result.txt":
+
+RESULTADO ESPERADO:
+========================
+poly_P1.txt:
+------------
+POLY 2
+0 4 1
+------------
+
+poly_P2.txt:
+------------
+POLY 2
+0 -4 -1
+------------
+
+poly_result.txt:
+------------
+POLY 0
+0
+------------
+========================
+
+### TESTE DA LEITURA DE ARQUIVO ###
+
+23) Execute novamente a calculadora, com os arquivos "poly_P1.txt", "poly_P2.txt" e "poly_result.txt" da questão anterior (questão 22). Se houve erros e os arquivos estavam incorretos, edite-os para que fiquem idênticos aos esperados.
+
+RESULTADO ESPERADO:
+========================
+P1:     x^2+4*x [Grau 2]
+P2:     -x^2-4*x [Grau 2]
+Result: 0 [Nulo]
+========================
+
+24) Encerre a calculadora. Faça com que os arquivos "poly_P1.txt" e "poly_P2.txt" sejam iguais aos esperados na questão 22. Edite o arquivo "poly_result.txt" para ter o seguinte conteúdo (Poly vazio):
+------------
+POLY -1000
+------------
+Execute novamente a calculadora: 
+
+RESULTADO ESPERADO:
+========================
+P1:     x^2+4*x [Grau 2]
+P2:     -x^2-4*x [Grau 2]
+Result: [Vazio]
+========================
+
+25) Encerre a calculadora. Faça com que os arquivos "poly_P1.txt" e "poly_P2.txt" sejam iguais aos esperados na questão 22. Edite o arquivo "poly_result.txt" para ter o seguinte conteúdo (invalido):
+------------
+POLY 2
+0 -12
+------------
+Execute novamente a calculadora: o arquivo poly_result.txt deve ser desconsiderado e o polinômio Result deve permanecer com seu valor anterior à leitura, ou seja, "x".
+
+RESULTADO ESPERADO:
+========================
+P1:     x^2+4*x [Grau 2]
+P2:     -x^2-4*x [Grau 2]
+Result: x [Grau 1]
+========================
+
+26) Encerre a calculadora. Faça com que os arquivos "poly_P1.txt" e "poly_P2.txt" sejam iguais aos esperados na questão 22. Edite o arquivo "poly_result.txt" para ter o seguinte conteúdo (invalido):
+------------
+POLY 2
+0 -12 0
+------------
+Execute novamente a calculadora: o arquivo poly_result.txt deve ser desconsiderado e o polinômio Result deve permanecer com seu valor anterior à leitura, ou seja, "x".
+
+RESULTADO ESPERADO:
+========================
+P1:     x^2+4*x [Grau 2]
+P2:     -x^2-4*x [Grau 2]
+Result: x [Grau 1]
+========================
+
+### TESTE DAS OPERAÇÕES: [ALGUMA COISA] operador [NULO] ###
+
+27) Troque os polinômios
+RESULTADO ESPERADO:
+========================
+P1:     x [Grau 1]
+P2:     x^2+4*x [Grau 2]
+Result: -x^2-4*x [Grau 2]
+========================
+
+28) Entre um novo polinônimo (grau 0):
+P(x) = 0
+
+RESULTADO ESPERADO:
+========================
+P1:     x^2+4*x [Grau 2]
+P2:     -x^2-4*x [Grau 2]
+Result: 0 [Nulo]
+========================
+
+29) Subtraia os dois polinômios:
+
+RESULTADO ESPERADO:
+========================
+P1:     -x^2-4*x [Grau 2]
+P2:     0 [Nulo]
+Result: -x^2-4*x [Grau 2]
+========================
+
+### TESTE DAS OPERAÇÕES: [NULO] operador [ALGUMA COISA] ###
+
+30) Multiplique os polinômios:
+
+RESULTADO ESPERADO:
+========================
+P1:     0 [Nulo]
+P2:     -x^2-4*x [Grau 2]
+Result: 0 [Nulo]
+========================
+
+### NOVOS TESTE DAS OPERAÇÕES COM POLINÔMIOS DE GRAU > 0 ###
+
+31) Entre um novo polinômio (grau 1):
+P(x) = 2.5x
+
+RESULTADO ESPERADO:
+========================
+P1:     -x^2-4*x [Grau 2]
+P2:     0 [Nulo]
+Result: 2.5*x [Grau 1]
+========================
+
+32) Entre um novo polinômio (grau 2):
+P(x) = x2 + 2
+
+RESULTADO ESPERADO:
+========================
+P1:     0 [Nulo]
+P2:     2.5*x [Grau 1]
+Result: x^2+2 [Grau 2]
+========================
+
+33) Inverta o sinal do último polinômio:
+
+RESULTADO ESPERADO:
+========================
+P1:     0 [Nulo]
+P2:     2.5*x [Grau 1]
+Result: -x^2-2 [Grau 2]
+========================
+
+### TESTE DAS OPERAÇÕES COM POLINÔMIOS DE GRAU DIFERENTES ###
+
+34) Some os dois polinômios:
+
+RESULTADO ESPERADO:
+========================
+P1:     2.5*x [Grau 1]
+P2:     -x^2-2 [Grau 2]
+Result: -x^2+2.5*x-2 [Grau 2]
+========================
+
+### TESTE DO CÁLCULO DO VALOR DE POLINÔMIO ###
+
+35) Calcule o valor do último polinômio (Result) para x=2.2:
+
+RESULTADO ESPERADO:
+========================
+P1:     -x^2-2 [Grau 2]
+P2:     -x^2+2.5*x-2 [Grau 2]
+Result: -1.34 [Grau 0]
+========================
+
+36) Calcule o valor do último polinômio (Result) para x=0:
+
+RESULTADO ESPERADO:
+========================
+P1:     -x^2+2.5*x-2 [Grau 2]
+P2:     -1.34 [Grau 0]
+Result: -1.34 [Grau 0]
+========================
+
+### TESTE DA TENTATIVA DE DIGITAÇÃO DE POLINÔMIO INVÁLIDO ###
+
+37) Tente entrar com um novo polinômio inválido (grau 1):
+P(x) = 0x + 2
+
+RESULTADO ESPERADO:
+========================
+O programa não deve permitir a digitação do coeficiente nulo, solicitando que o usuário digite novamente o coeficiente inválido.
+========================

@@ -1,0 +1,101 @@
+<<<<<<< HEAD:Codigo/Circuito/circuito.depend
+# depslib dependency file v1.0
+1676386161 source:c:\users\sol\documents\projetos\simulador-de-circuito-digital\codigo\circuito\bool3s.cpp
+	<iostream>
+	"bool3S.h"
+
+1676386161 c:\users\sol\documents\projetos\simulador-de-circuito-digital\codigo\circuito\bool3s.h
+	<iostream>
+
+1700079741 source:c:\users\sol\documents\projetos\simulador-de-circuito-digital\codigo\circuito\port.cpp
+	<fstream>
+	"port.h"
+
+1699538782 c:\users\sol\documents\projetos\simulador-de-circuito-digital\codigo\circuito\port.h
+	<iostream>
+	<string>
+	<vector>
+	"bool3S.h"
+
+1675976369 source:c:\users\sol\documents\projetos\simulador-de-circuito-digital\codigo\circuito\teste1.cpp
+	<iostream>
+	<string>
+	"port.h"
+
+1699709700 source:c:\users\sol\documents\projetos\simulador-de-circuito-digital\codigo\circuito\teste2.cpp
+	<iostream>
+	<string>
+	"circuito.h"
+
+1699646247 c:\users\sol\documents\projetos\simulador-de-circuito-digital\codigo\circuito\circuito.h
+	<iostream>
+	<string>
+	<vector>
+	"bool3S.h"
+	"port.h"
+
+1700079741 source:c:\users\sol\documents\projetos\simulador-de-circuito-digital\codigo\circuito\circuito.cpp
+	<fstream>
+	<utility>
+	"circuito.h"
+
+1700071440 source:c:\users\sol\documents\projetos\simulador-de-circuito-digital\codigo\circuito\circuito-main.cpp
+	<iostream>
+	<string>
+	"circuito.h"
+
+1676058735 source:c:\users\sol\documents\projetos\simulador-de-circuito-digital\codigo\circuito\teste3.cpp
+	<iostream>
+	"circuito.h"
+
+=======
+# depslib dependency file v1.0
+1676386161 source:c:\users\vitor\desktop\simulador circuito\meu\circuito\bool3s.cpp
+	<iostream>
+	"bool3S.h"
+
+1676386161 c:\users\vitor\desktop\simulador circuito\meu\circuito\bool3s.h
+	<iostream>
+
+1700079003 source:c:\users\vitor\desktop\simulador circuito\meu\circuito\circuito.cpp
+	<fstream>
+	<utility>
+	"circuito.h"
+
+1689275873 c:\users\vitor\desktop\simulador circuito\meu\circuito\circuito.h
+	<iostream>
+	<string>
+	<vector>
+	"bool3S.h"
+	"port.h"
+
+1689275569 c:\users\vitor\desktop\simulador circuito\meu\circuito\port.h
+	<iostream>
+	<string>
+	<vector>
+	"bool3S.h"
+
+1700077835 source:c:\users\vitor\desktop\simulador circuito\meu\circuito\port.cpp
+	<fstream>
+	"port.h"
+
+1699567955 source:c:\users\vitor\desktop\simulador circuito\meu\circuito\teste1.cpp
+	<iostream>
+	<string>
+	"port.h"
+
+1699710142 source:c:\users\vitor\desktop\simulador circuito\meu\circuito\teste2.cpp
+	<iostream>
+	<string>
+	"circuito.h"
+
+1699915764 source:c:\users\vitor\desktop\simulador circuito\meu\circuito\teste3.cpp
+	<iostream>
+	"circuito.h"
+
+1699993232 source:c:\users\vitor\desktop\simulador circuito\meu\circuito\circuito-main.cpp
+	<iostream>
+	<string>
+	"circuito.h"
+
+>>>>>>> 032c35e3106b801443f7770f8323f49f488e62f2:Circuito/circuito.depend

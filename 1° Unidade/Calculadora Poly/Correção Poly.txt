@@ -1,0 +1,100 @@
+PROVA - PROGRAMAÇÃO AVANÇADA - 2023.2
+1ª UNIDADE
+
+
+Alun@:
+
+
+NOTA DA EXECUÇÃO: 40/40 = 
+
+DESCONTOS POR ERROS: 0,9
+NOTA DO CÓDIGO: 9,1
+
+NOTA FINAL:  9,6
+
+
+ERROS:
+
+### -0,2pt A função membro:
+  void reduzir();
+deveria ser private, já que ela só deve ser utilizada por outras funções da classe e não pelos usuários da classe.
+
+### -0,5pt Na função Poly::operator== o teste:
+  if (grau == other.grau) return true;
+deveria ser:
+  if (grau != other.grau) return false;
+Como está, quaisquer 2 polinômios com o mesmo grau serão considerados iguais, mesmo que os coeficientes sejam diferentes. A diferença nos graus permite estabelecer imediatamente que os polinômios são diferentes, mas a igualdade dos graus NÃO PERMITE sozinha estabelecer que os polinômios são iguais.
+Já ao final, em vez de:
+  return false;
+deveria ser:
+  return true;
+
+### -0,2pt Na função Poly::reduzir:
+A) Sempre que grau>=0, mesmo quando não houve redução de grau, você está alocando uma nova área (double* novos_coeficientes), copiando os coeficientes e desalocando a área antiga, que são operações desnecessárias se não houve modificação no grau.
+B) Você deveria ter seguido a recomendação sobre boas técnicas de programação que está no resumo sobre Classes:
+=====
+Geralmente, a alocação (new, new ...[..]) e a desalocação (delete, delete[]) de
+ponteiros só deve ser feita nos métodos obrigatórios das classes (construtores, destrutor e
+operadores de atribuição).
+Nas demais funções (outros métodos da classe ou utilização da classe no programa principal),
+para alterar os recursos alocados a um objeto deve ser utilizado algum dos métodos
+obrigatórios que execute a modificação desejada.
+=====
+Se precisasse criar uma área de armazenamento temporária, deveria ter criado um Poly provisório, pois o construtor e destrutor da classe gerenciaria a memória.
+A função como um todo poderia ser:
+void Poly::reduzir()
+{
+  int novoG = grau;
+  while (novoG>0 && a[novoG]==0.0) novoG--;
+  if (novoG != grau) {
+    Poly prov(novoG);
+    for (int i=0; i<=prov.grau; ++i) prov.a[i] = a[i];
+    *this = move(prov);
+  }
+}
+
+
+A avaliação consiste de 40 (quarenta) questões, cujos enunciados encontram-se no arquivo com as questões da prova.
+
+Assinale se o resultado da execução do seu programa foi 100% correto, comparado com a resposta esperada (o gabarito encontra-se no arquivo com as questões da prova). Se foi incorreto, explique resumidamente o que deu errado.
+
+Questão 01:  (x) 100% correto   ( ) Incorreto: _____
+Questão 02:  (x) 100% correto   ( ) Incorreto: _____
+Questão 03:  (x) 100% correto   ( ) Incorreto: _____
+Questão 04:  (x) 100% correto   ( ) Incorreto: _____
+Questão 05:  (x) 100% correto   ( ) Incorreto: _____
+Questão 06:  (x) 100% correto   ( ) Incorreto: _____
+Questão 07:  (x) 100% correto   ( ) Incorreto: _____
+Questão 08:  (x) 100% correto   ( ) Incorreto: _____
+Questão 09:  (x) 100% correto   ( ) Incorreto: _____
+Questão 10:  (x) 100% correto   ( ) Incorreto: _____
+Questão 11:  (x) 100% correto   ( ) Incorreto: _____
+Questão 12:  (x) 100% correto   ( ) Incorreto: _____
+Questão 13:  (x) 100% correto   ( ) Incorreto: _____
+Questão 14:  (x) 100% correto   ( ) Incorreto: _____
+Questão 15:  (x) 100% correto   ( ) Incorreto: _____
+Questão 16:  (x) 100% correto   ( ) Incorreto: _____
+Questão 17:  (x) 100% correto   ( ) Incorreto: _____
+Questão 18:  (x) 100% correto   ( ) Incorreto: _____
+Questão 19:  (x) 100% correto   ( ) Incorreto: _____
+Questão 20:  (x) 100% correto   ( ) Incorreto: _____
+Questão 21:  (x) 100% correto   ( ) Incorreto: _____
+Questão 22:  (x) 100% correto   ( ) Incorreto: _____
+Questão 23:  (x) 100% correto   ( ) Incorreto: _____
+Questão 24:  (x) 100% correto   ( ) Incorreto: _____
+Questão 25:  (x) 100% correto   ( ) Incorreto: _____
+Questão 26:  (x) 100% correto   ( ) Incorreto: _____
+Questão 27:  (x) 100% correto   ( ) Incorreto: _____
+Questão 28:  (x) 100% correto   ( ) Incorreto: _____
+Questão 29:  (x) 100% correto   ( ) Incorreto: _____
+Questão 30:  (x) 100% correto   ( ) Incorreto: _____
+Questão 31:  (x) 100% correto   ( ) Incorreto: _____
+Questão 32:  (x) 100% correto   ( ) Incorreto: _____
+Questão 33:  (x) 100% correto   ( ) Incorreto: _____
+Questão 34:  (x) 100% correto   ( ) Incorreto: _____
+Questão 35:  (x) 100% correto   ( ) Incorreto: _____
+Questão 36:  (x) 100% correto   ( ) Incorreto: _____
+Questão 37:  (x) 100% correto   ( ) Incorreto: _____
+Questão 38:  (x) 100% correto   ( ) Incorreto: _____
+Questão 39:  (x) 100% correto   ( ) Incorreto: _____
+Questão 40:  (x) 100% correto   ( ) Incorreto: _____

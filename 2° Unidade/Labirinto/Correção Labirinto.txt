@@ -1,0 +1,162 @@
+PROVA - PROGRAMAÇÃO AVANÇADA - 2023.2
+Projeto Labirinto
+
+
+Alun@:
+
+
+NOTA DA EXECUÇÃO: 10/10 = 10,0
+
+### O PROJETO APRESENTA PARTES QUE SÃO REPRODUÇÕES DE TRECHOS DE CÓDIGO PRESENTES EM PROJETO DE OUTRO ALUNO, INCLUSIVE COM OS MESMOS ERROS E/OU TÉCNICAS DE PROGRAMAÇÃO NÃO ADEQUADAS. Embora isso normalmente gere a atribuição de nota 0,0:
+=====
+6) DETECÇÃO DE PLÁGIO
+Os softwares também passarão por uma ferramenta automática de detecção de plágio. Caso constatado plágio (entre alunos dessa turma, de projetos apresentados em períodos anteriores ou de material disponível na Internet) pela ferramenta e confirmado pelo professor, O ALUNO RECEBERÁ NOTA 0,0 (ZERO) NA AVALIAÇÃO INTEIRA. Em caso de cópia envolvendo vários alunos, TODOS RECEBERÃO NOTA 0,0 (ZERO), independentemente de serem o autor ou replicador do código.
+=====
+como a cópia foi parcial, resolvi fazer um desconto na nota.
+
+DESCONTOS POR ERROS: 2,1
+DESCONTO POR PLÁGIO: 2,0
+NOTA DO CÓDIGO: 5,9
+
+NOTA FINAL:  6,0
+
+ERROS:
+
+### -0,2pt A função Coord::calcular_heuristica não se enquadra muito bem na classe Coord, que inclusive não deveria ser modificada. Isso pq ela trata de uma heurística do método A*, algo que não tem nenhuma relação com uma coordenada bidimensional. Seria melhor ter sido prevista como um método da classe/struct Noh, pois nesse caso ela já utilizaria a Coord "posicao" e armazenaria o resultado em "h", sem correr o risco de o usuário cometer erros. Em vez de:
+  atual.h = atual.posicao.calcular_heuristica(dest); // MUITO COMPLEXO!
+  sucessor.h = prox.calcular_heuristica(dest);
+ficaria:
+  atual.calcular_heuristica(dest);
+  sucessor.calcular_heuristica(dest);
+
+### -0,2pt No construtor específico da classe Noh, em vez de:
+  Noh(const Coord& pos, const Coord& ante, double a, double b)
+  {
+    posicao = pos;
+    posicao_anterior = ante;
+    g = a;
+    h = b;
+  }
+deveria ser:
+  Noh(const Coord& pos, const Coord& ante, double a, double b):
+    posicao(pos), posicao_anterior(ante), g(a), h(b) {}
+
+### -0,2pt As funções:
+  Coord Noh::get_posicao()
+  Coord Noh::get_anterior()
+  bool Noh::operator () (const Noh& C)
+  bool Noh::operator == (const Coord& C)
+deveriam ser const:
+  Coord Noh::get_posicao() const
+  Coord Noh::get_anterior() const
+  bool Noh::operator () (const Noh& C) const
+  bool Noh::operator == (const Coord& C) const
+
+### -0,5pt Na classe Noh, você sobrecarregou o operator() com o sentido correspondente ao do operator<:
+  bool operator()(const Noh& C) const { return custo_total() < C.custo_total(); }
+o que é sempre uma PÉSSIMA técnica de programação, conforme dito no Resumo sobre Classes:
+=====
+Os operadores devem ser sobrecarregados apenas com o sentido usual ou próximo. Evite,
+por exemplo, sobrecarregar o operador '+' para fazer multiplicações...
+=====
+Deveria ser:
+  bool operator<(const Noh& C) const { return custo_total() < C.custo_total(); }
+e, na utilização, em vez de:
+  if (sucessor(*old)) ... // Praticamente incompreensivel...
+deveria ser:
+  if (sucessor < *old) ...
+ESTE MESMO ERRO OCORREU, DE FORMA PRATICAMENTE IDÊNTICA, EM PROJETO APRESENTADO POR OUTRO ALUNO!
+
+### -1,0pt Na função Labirinto::calculaCaminho, você implementou uma busca com find_if e um functor (sobrecarga do operator() na classe Noh) para procurar o primeiro nó de custo maior que sucessor, sendo que:
+A) Não se deve sobrecarregar um operador com sentido diferente do usual (ver erro acima).
+B) Existe um algoritmo STL específico para fazer isso, o upper_bound. Inclusive, o operator< entre dois nós que ele requer deve ser o operator() que você implementou (ver erro acima). Deveria ser:
+  if (eh_inedito) {
+    auto big = upper_bound( lista_abertos.begin(), lista_abertos.end(), sucessor );
+    lista_abertos.insert(big,sucessor);
+  }
+C) Caso decidisse utilizar (o que não é o mais adequado...) o find_if passando um objeto functor como terceiro parâmetro, não há necessidade (e é ineficiente) criar um objeto sem nome que é uma cópia de "sucessor" apenas para passar como parâmetro. Em vez de:
+  auto big = find_if(lista_abertos.begin(),lista_abertos.end(), Noh(sucessor));
+deveria ser:
+  auto big = find_if(lista_abertos.begin(),lista_abertos.end(), sucessor);
+ESTE MESMO ERRO OCORREU, DE FORMA PRATICAMENTE IDÊNTICA, EM PROJETO APRESENTADO POR OUTRO ALUNO!
+
+
+A avaliação consiste de 10 (dez) labirintos cujos mapas encontram-se no arquivo com as questões da prova. Para cada questão devem ser informados os seguintes resultados:
+
+== DADOS A SEREM SEMPRE INFORMADOS:
+* Tempo de execução (em milissegundos)
+* Número de nós em aberto (número inteiro)
+* Número de nós em fechado (número inteiro)
+== DADOS CUJO VALOR É -1 SE NÃO FOR ENCONTRADO CAMINHO
+* Comprimento do caminho (número real, 4 casas decimais)
+* Profundidade do caminho (número inteiro)
+
+QUESTÃO 01 OK
+Tempo: 0.3058ms
+Nós Aberto: 29
+Nós Fechado: 43
+Comprimento: 16.2516
+Profundidade: 13
+
+QUESTÃO 02 OK
+Tempo: 0.1546ms
+Nós Aberto: 0
+Nós Fechado: 35
+Comprimento: -1.0000
+Profundidade: -1
+
+QUESTÃO 03 OK
+Tempo: 0.8697ms
+Nós Aberto: 6
+Nós Fechado: 152
+Comprimento: 40.7353
+Profundidade: 32
+
+QUESTÃO 04 OK
+Tempo: 0.9072ms
+Nós Aberto: 29
+Nós Fechado: 117
+Comprimento: 36.5321
+Profundidade: 28
+
+QUESTÃO 05 OK
+Tempo: 2.1017ms
+Nós Aberto: 50
+Nós Fechado: 202
+Comprimento: 47.5299
+Profundidade: 39
+
+QUESTÃO 06 OK
+Tempo: 0.6525ms
+Nós Aberto: 10
+Nós Fechado: 92
+Comprimento: 34.4035
+Profundidade: 26
+
+QUESTÃO 07 OK
+Tempo: 0.8866ms
+Nós Aberto: 11
+Nós Fechado: 118
+Comprimento: 42.1805
+Profundidade: 29
+
+QUESTÃO 08 OK
+Tempo: 0.1445ms
+Nós Aberto: 7
+Nós Fechado: 39
+Comprimento: 17.8240
+Profundidade: 13
+
+QUESTÃO 09 OK
+Tempo: 0.1548ms
+Nós Aberto: 16
+Nós Fechado: 35
+Comprimento: 22.2359
+Profundidade: 19
+
+QUESTÃO 10 OK
+Tempo: 0.5208ms
+Nós Aberto: 2
+Nós Fechado: 76
+Comprimento: 18.2072
+Profundidade: 17

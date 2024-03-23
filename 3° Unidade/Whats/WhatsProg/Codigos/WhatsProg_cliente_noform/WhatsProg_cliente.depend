@@ -1,0 +1,45 @@
+# depslib dependency file v1.0
+1676669938 source:c:\users\sol\documents\whatsprog\codigos\whatsprog_cliente_noform\whatsprog_dados.cpp
+	"whatsprog_dados.h"
+
+1676669938 c:\users\sol\documents\whatsprog\codigos\whatsprog_cliente_noform\whatsprog_dados.h
+	<iostream>
+	<fstream>
+	<string>
+	<list>
+
+1676493817 source:c:\users\sol\documents\whatsprog\codigos\mysocket\mysocket.cpp
+	<iostream>
+	<string.h>
+	"mysocket.h"
+	<sys/types.h>
+	<netdb.h>
+	<unistd.h>
+
+1676493817 c:\users\sol\documents\whatsprog\codigos\mysocket\mysocket.h
+	<iostream>
+	<string>
+	<winsock2.h>
+	<ws2tcpip.h>
+	<sys/socket.h>
+
+1676669938 source:c:\users\sol\documents\whatsprog\codigos\whatsprog_cliente_noform\main_cliente_noform.cpp
+	"whatsprog_dados_cliente.h"
+	"../MySocket/mysocket.h"
+	<cstdio>
+	<thread>
+
+1676669938 c:\users\sol\documents\whatsprog\codigos\whatsprog_cliente_noform\whatsprog_dados_cliente.h
+	<iostream>
+	<fstream>
+	<string>
+	<vector>
+	<list>
+	<mutex>
+	"whatsprog_dados.h"
+	"../MySocket/mysocket.h"
+
+1684962594 source:c:\users\sol\documents\whatsprog\codigos\whatsprog_cliente_noform\whatsprog_dados_cliente.cpp
+	"whatsprog_dados_cliente.h"
+	<algorithm>
+

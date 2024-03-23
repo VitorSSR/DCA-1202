@@ -1,0 +1,267 @@
+PROVA - PROGRAMAÇÃO AVANÇADA - 2023.2
+Projeto WhatsProg
+
+
+Alun@: 
+
+
+PARTE 1: 24/24
+PARTE 2: 0/18
+PARTE 3: 0/19
+TOTAL:   24/61 = 3,9
+
+A nota da avaliação foi atribuída apenas com base no total de acertos das questões, sem correção do código enviado. Foram apenas compilados e executados os códigos, para ver se funcionavam, e executadas algumas das operaçõs, escoihidas aleatoriamente, para verificar se o comportamento dos softwares corresponde ao que foi informado no questionário.
+
+A avaliação consiste de várias operações a serem feitas com o servidor e/ou o cliente WhatsProg, que estão descritas no arquivo da prova. Para cada operação, deve ser informado como a operação funcionou:
+SIM - funcionou perfeitamente.
+NÃO - alguma coisa não funcionou como deveria (nesse caso, descreva bem resumidamente o que houve).
+
+###################################
+
+OPERAÇÃO 1.1:
+(x) SIM, FUNCIONOU PERFEITAMENTE (100%)
+( ) NÃO: _____
+
+OPERAÇÃO 1.2:
+(x) SIM, FUNCIONOU PERFEITAMENTE (100%)
+( ) NÃO: _____
+
+OPERAÇÃO 1.3:
+(x) SIM, FUNCIONOU PERFEITAMENTE (100%)
+( ) NÃO: _____
+
+OPERAÇÃO 1.4:
+(x) SIM, FUNCIONOU PERFEITAMENTE (100%)
+( ) NÃO: _____
+
+OPERAÇÃO 1.5:
+(x) SIM, FUNCIONOU PERFEITAMENTE (100%)
+( ) NÃO: _____
+
+OPERAÇÃO 1.6:
+(x) SIM, FUNCIONOU PERFEITAMENTE (100%)
+( ) NÃO: _____
+
+OPERAÇÃO 1.7:
+(x) SIM, FUNCIONOU PERFEITAMENTE (100%)
+( ) NÃO: _____
+
+OPERAÇÃO 1.8:
+(x) SIM, FUNCIONOU PERFEITAMENTE (100%)
+( ) NÃO: _____
+
+OPERAÇÃO 1.9:
+(x) SIM, FUNCIONOU PERFEITAMENTE (100%)
+( ) NÃO: _____
+
+OPERAÇÃO 1.10:
+(x) SIM, FUNCIONOU PERFEITAMENTE (100%)
+( ) NÃO: _____
+
+OPERAÇÃO 1.11:
+(x) SIM, FUNCIONOU PERFEITAMENTE (100%)
+( ) NÃO: _____
+
+OPERAÇÃO 1.12:
+(x) SIM, FUNCIONOU PERFEITAMENTE (100%)
+( ) NÃO: _____
+
+OPERAÇÃO 1.13:
+(x) SIM, FUNCIONOU PERFEITAMENTE (100%)
+( ) NÃO: _____
+
+OPERAÇÃO 1.14:
+(x) SIM, FUNCIONOU PERFEITAMENTE (100%)
+( ) NÃO: _____
+
+OPERAÇÃO 1.15:
+(x) SIM, FUNCIONOU PERFEITAMENTE (100%)
+( ) NÃO: _____
+
+OPERAÇÃO 1.16:
+(x) SIM, FUNCIONOU PERFEITAMENTE (100%)
+( ) NÃO: _____
+
+OPERAÇÃO 1.17:
+(x) SIM, FUNCIONOU PERFEITAMENTE (100%)
+( ) NÃO: _____
+
+OPERAÇÃO 1.18:
+(x) SIM, FUNCIONOU PERFEITAMENTE (100%)
+( ) NÃO: _____
+
+OPERAÇÃO 1.19:
+(x) SIM, FUNCIONOU PERFEITAMENTE (100%)
+( ) NÃO: _____
+
+OPERAÇÃO 1.20:
+(x) SIM, FUNCIONOU PERFEITAMENTE (100%)
+( ) NÃO: _____
+
+OPERAÇÃO 1.21:
+(x) SIM, FUNCIONOU PERFEITAMENTE (100%)
+( ) NÃO: _____
+
+OPERAÇÃO 1.22:
+(x) SIM, FUNCIONOU PERFEITAMENTE (100%)
+( ) NÃO: _____
+
+OPERAÇÃO 1.23:
+(x) SIM, FUNCIONOU PERFEITAMENTE (100%)
+( ) NÃO: _____
+
+OPERAÇÃO 1.24:
+(x) SIM, FUNCIONOU PERFEITAMENTE (100%)
+( ) NÃO: _____
+
+###################################
+
+OPERAÇÃO 2.1:
+( ) SIM, FUNCIONOU PERFEITAMENTE (100%)
+(x) NÃO: _____
+
+OPERAÇÃO 2.2:
+( ) SIM, FUNCIONOU PERFEITAMENTE (100%)
+(x) NÃO: _____
+
+OPERAÇÃO 2.3:
+( ) SIM, FUNCIONOU PERFEITAMENTE (100%)
+(x) NÃO: _____
+
+OPERAÇÃO 2.4:
+( ) SIM, FUNCIONOU PERFEITAMENTE (100%)
+(x) NÃO: _____
+
+OPERAÇÃO 2.5:
+( ) SIM, FUNCIONOU PERFEITAMENTE (100%)
+(x) NÃO: _____
+
+OPERAÇÃO 2.6:
+( ) SIM, FUNCIONOU PERFEITAMENTE (100%)
+(x) NÃO: _____
+
+OPERAÇÃO 2.7:
+( ) SIM, FUNCIONOU PERFEITAMENTE (100%)
+(x) NÃO: _____
+
+OPERAÇÃO 2.8:
+( ) SIM, FUNCIONOU PERFEITAMENTE (100%)
+(x) NÃO: _____
+
+OPERAÇÃO 2.9:
+( ) SIM, FUNCIONOU PERFEITAMENTE (100%)
+(x) NÃO: _____
+
+OPERAÇÃO 2.10:
+( ) SIM, FUNCIONOU PERFEITAMENTE (100%)
+(x) NÃO: _____
+
+OPERAÇÃO 2.11:
+( ) SIM, FUNCIONOU PERFEITAMENTE (100%)
+(x) NÃO: _____
+
+OPERAÇÃO 2.12:
+( ) SIM, FUNCIONOU PERFEITAMENTE (100%)
+(x) NÃO: _____
+
+OPERAÇÃO 2.13:
+( ) SIM, FUNCIONOU PERFEITAMENTE (100%)
+(x) NÃO: _____
+
+OPERAÇÃO 2.14:
+( ) SIM, FUNCIONOU PERFEITAMENTE (100%)
+(x) NÃO: _____
+
+OPERAÇÃO 2.15:
+( ) SIM, FUNCIONOU PERFEITAMENTE (100%)
+(x) NÃO: _____
+
+OPERAÇÃO 2.16:
+( ) SIM, FUNCIONOU PERFEITAMENTE (100%)
+(x) NÃO: _____
+
+OPERAÇÃO 2.17:
+( ) SIM, FUNCIONOU PERFEITAMENTE (100%)
+(x) NÃO: _____
+
+OPERAÇÃO 2.18:
+( ) SIM, FUNCIONOU PERFEITAMENTE (100%)
+(x) NÃO: _____
+
+###################################
+
+OPERAÇÃO 3.1:
+( ) SIM, FUNCIONOU PERFEITAMENTE (100%)
+(x) NÃO: _____
+
+OPERAÇÃO 3.2:
+( ) SIM, FUNCIONOU PERFEITAMENTE (100%)
+(x) NÃO: _____
+
+OPERAÇÃO 3.3:
+( ) SIM, FUNCIONOU PERFEITAMENTE (100%)
+(x) NÃO: _____
+
+OPERAÇÃO 3.4:
+( ) SIM, FUNCIONOU PERFEITAMENTE (100%)
+(x) NÃO: _____
+
+OPERAÇÃO 3.5:
+( ) SIM, FUNCIONOU PERFEITAMENTE (100%)
+(x) NÃO: _____
+
+OPERAÇÃO 3.6:
+( ) SIM, FUNCIONOU PERFEITAMENTE (100%)
+(x) NÃO: _____
+
+OPERAÇÃO 3.7:
+( ) SIM, FUNCIONOU PERFEITAMENTE (100%)
+(x) NÃO: _____
+
+OPERAÇÃO 3.8:
+( ) SIM, FUNCIONOU PERFEITAMENTE (100%)
+(x) NÃO: _____
+
+OPERAÇÃO 3.9:
+( ) SIM, FUNCIONOU PERFEITAMENTE (100%)
+(x) NÃO: _____
+
+OPERAÇÃO 3.10:
+( ) SIM, FUNCIONOU PERFEITAMENTE (100%)
+(x) NÃO: _____
+
+OPERAÇÃO 3.11:
+( ) SIM, FUNCIONOU PERFEITAMENTE (100%)
+(x) NÃO: _____
+
+OPERAÇÃO 3.12:
+( ) SIM, FUNCIONOU PERFEITAMENTE (100%)
+(x) NÃO: _____
+
+OPERAÇÃO 3.13:
+( ) SIM, FUNCIONOU PERFEITAMENTE (100%)
+(x) NÃO: _____
+
+OPERAÇÃO 3.14:
+( ) SIM, FUNCIONOU PERFEITAMENTE (100%)
+(x) NÃO: _____
+
+OPERAÇÃO 3.15:
+( ) SIM, FUNCIONOU PERFEITAMENTE (100%)
+(x) NÃO: _____
+
+OPERAÇÃO 3.16:
+( ) SIM, FUNCIONOU PERFEITAMENTE (100%)
+(x) NÃO: _____
+
+OPERAÇÃO 3.17:
+( ) SIM, FUNCIONOU PERFEITAMENTE (100%)
+(x) NÃO: _____
+
+OPERAÇÃO 3.18:
+( ) SIM, FUNCIONOU PERFEITAMENTE (100%)
+(x) NÃO: _____
+
+OPERAÇÃO 3.19:
+( ) SIM, FUNCIONOU PERFEITAMENTE (100%)
+(x) NÃO: _____

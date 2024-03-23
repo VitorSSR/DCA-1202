@@ -1,0 +1,45 @@
+# depslib dependency file v1.0
+1676493817 source:c:\users\sol\documents\whatsprog\codigos\mysocket\mysocket.cpp
+	<iostream>
+	<string.h>
+	"mysocket.h"
+	<sys/types.h>
+	<netdb.h>
+	<unistd.h>
+
+1676493817 c:\users\sol\documents\whatsprog\codigos\mysocket\mysocket.h
+	<iostream>
+	<string>
+	<winsock2.h>
+	<ws2tcpip.h>
+	<sys/socket.h>
+
+1677154289 source:c:\users\sol\documents\whatsprog\codigos\whatsprog_servidor\main_servidor.cpp
+	<iostream>
+	<thread>
+	"whatsprog_dados.h"
+	"whatsprog_dados_servidor.h"
+
+1676669938 c:\users\sol\documents\whatsprog\codigos\whatsprog_servidor\whatsprog_dados.h
+	<iostream>
+	<fstream>
+	<string>
+	<list>
+
+1702389992 c:\users\sol\documents\whatsprog\codigos\whatsprog_servidor\whatsprog_dados_servidor.h
+	<string>
+	<list>
+	"../MySocket/mysocket.h"
+	"whatsprog_dados.h"
+
+1676669938 source:c:\users\sol\documents\whatsprog\codigos\whatsprog_servidor\whatsprog_dados.cpp
+	"whatsprog_dados.h"
+
+1702656779 source:c:\users\sol\documents\whatsprog\codigos\whatsprog_servidor\whatsprog_dados_servidorfake.cpp
+	<iostream>
+	<sstream>
+	<iomanip>
+	<vector>
+	<algorithm>
+	"whatsprog_dados_servidor.h"
+
